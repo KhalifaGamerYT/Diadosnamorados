@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dia dos namorados</title>
+
+    <style>
+        body{
+            background-color: red;
+        }
+
+
+        .painel{
+            margin: auto;
+            background-color: white;  
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family:  'Bebas Neue', sans-serif;;
+            color: red;
+            
+        }
+
+        #sim{
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border:2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+
+        #nao{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border:2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+           
+        }
+    </style>
+
+</head>
+<body>
+    <div class="painel">
+        <h1>FELIZ DIA DOS NAMORADOS</h1>
+        
+    
+        <h2>Aceita namorar comigo?</h2>
+
+
+       <a href="https://drive.google.com/file/d/1Nb5yb4hi06lMRDqrX-bMYPq3XC46unZf/view?usp=sharing"><button id="sim"> SIM!</button></a>
+        <button onmouseover="fuja()" id ="nao"> NÃO!</button>
+        <figure>
+            
+        </figure>
+        <img src=https://media.tenor.com/yZvmMJJk1xkAAAAC/hearts-naruto.gif </img>
+    
+
+    </div>
+
+
+    <script>
+        function fuja(){
+            var botaonao = document.getElementById("nao")
+
+            var largurajanela = window.innerWidth;
+            var alturajanela = window.innerHeight;
+
+            var maxX = largurajanela - botaonao.offsetWidth;
+            var maxY = alturajanela - botaonao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaonao.style.left = aleatorioX + "px";
+            botaonao.style.top = aleatorioY + "px";
+
+           
+            
+        }
+        
+        
+
+    </script>
+</body>
+
+
+<footer>
+
+    <H1>DESENVOLVIDO POR: RONALD PASSOS BRAZ</H1>
+
+</footer>
+</html>
